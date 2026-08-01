@@ -42,7 +42,7 @@ export default function Solucion() {
         <div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {pasos.map((paso) => (
             <div key={paso.numero} className="relative">
-              <span className="text-4xl font-bold text-brand-500/40">
+              <span className="text-4xl font-bold text-accent-400/60">
                 {paso.numero}
               </span>
               <h3 className="mt-3 text-lg font-semibold text-white">

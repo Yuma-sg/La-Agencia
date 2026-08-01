@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import ProblemasComunes from "@/components/ProblemasComunes";
 import Solucion from "@/components/Solucion";
@@ -8,6 +9,7 @@ import CTAFinal from "@/components/CTAFinal";
 export default function Home() {
   return (
     <main>
+      <Header />
       <Hero />
       <ProblemasComunes />
       <Solucion />

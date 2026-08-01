@@ -5,7 +5,7 @@ const WHATSAPP_MESSAGE = encodeURIComponent(
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-slate-950 pb-20 pt-28 sm:pb-28 sm:pt-36">
+    <section className="relative overflow-hidden bg-slate-950 pb-20 pt-16 sm:pb-28 sm:pt-24">
       <div
         className="pointer-events-none absolute inset-0 bg-grid-pattern bg-[size:48px_48px] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_0%,black,transparent)]"
         aria-hidden="true"
@@ -16,13 +16,13 @@ export default function Hero() {
       />
 
       <div className="relative mx-auto flex max-w-5xl flex-col items-center px-6 text-center">
-        <span className="inline-flex items-center gap-2 rounded-full border border-brand-400/30 bg-brand-500/10 px-4 py-1.5 text-sm font-medium text-brand-200">
+        <span className="inline-flex items-center gap-2 rounded-full bg-accent-400 px-4 py-1.5 text-sm font-semibold text-slate-950">
           Especialistas en optimización de e-commerce
         </span>
 
         <h1 className="mt-6 text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
           Tu tienda en línea puede vender{" "}
-          <span className="bg-gradient-to-r from-brand-400 to-brand-200 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-brand-300 to-accent-400 bg-clip-text text-transparent">
             mucho más
           </span>
         </h1>

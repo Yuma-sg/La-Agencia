@@ -1,5 +1,13 @@
 import type { Metadata } from "next";
+import { Poppins } from "next/font/google";
 import "./globals.css";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-poppins",
+  display: "swap",
+});
 
 const siteUrl = "https://laagencia.com.mx";
 
@@ -43,8 +51,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es" className="scroll-smooth">
-      <body className="bg-slate-950 text-slate-100 antialiased">
+    <html lang="es" className={`scroll-smooth ${poppins.variable}`}>
+      <body className="bg-slate-950 font-sans text-slate-100 antialiased">
         {children}
       </body>
     </html>

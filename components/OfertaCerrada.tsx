@@ -15,7 +15,7 @@ export default function OfertaCerrada() {
     <section className="bg-slate-950 py-20 sm:py-28">
       <div className="mx-auto max-w-4xl px-6">
         <div className="relative overflow-hidden rounded-3xl border border-brand-400/30 bg-gradient-to-b from-brand-950 to-slate-900 p-8 text-center sm:p-14">
-          <span className="inline-flex items-center rounded-full bg-brand-500/20 px-4 py-1.5 text-sm font-medium text-brand-200">
+          <span className="inline-flex items-center rounded-full bg-accent-400 px-4 py-1.5 text-sm font-semibold text-slate-950">
             Cupo limitado este mes
           </span>
 
@@ -32,7 +32,7 @@ export default function OfertaCerrada() {
           <ul className="mx-auto mt-8 grid max-w-md gap-3 text-left">
             {incluye.map((item) => (
               <li key={item} className="flex items-start gap-3 text-slate-200">
-                <span className="mt-1 flex h-5 w-5 flex-none items-center justify-center rounded-full bg-brand-500/20 text-brand-300">
+                <span className="mt-1 flex h-5 w-5 flex-none items-center justify-center rounded-full bg-accent-400/20 text-accent-400">
                   ✓
                 </span>
                 {item}
