@@ -1,27 +1,27 @@
 const pasos = [
   {
     numero: "01",
-    titulo: "Auditoría completa",
+    titulo: "Diagnóstico",
     descripcion:
-      "Analizamos tu tienda, tu tráfico y tu embudo de conversión para encontrar exactamente dónde estás perdiendo ventas.",
+      "Revisamos tu marca, tu web y tus redes actuales para entender en dónde estás y qué te está frenando.",
   },
   {
     numero: "02",
     titulo: "Estrategia y diseño",
     descripcion:
-      "Diseñamos una experiencia de compra clara, rápida y persuasiva, alineada con tu marca y tus clientes ideales.",
+      "Definimos tu identidad visual y el plan de contenido y web que mejor conecta con tus clientes ideales.",
   },
   {
     numero: "03",
     titulo: "Implementación",
     descripcion:
-      "Ejecutamos los cambios en tu tienda: UX, velocidad, checkout y mensajes que generan confianza.",
+      "Creamos tu marca, tu sitio web y tu contenido, listos para publicarse y usarse en todos tus canales.",
   },
   {
     numero: "04",
-    titulo: "Medición y mejora continua",
+    titulo: "Gestión y crecimiento",
     descripcion:
-      "Monitoreamos resultados en tiempo real y seguimos optimizando para que la conversión suba mes a mes.",
+      "Mantenemos tus redes activas y seguimos ajustando la estrategia para que tu negocio crezca mes a mes.",
   },
 ];
 
@@ -34,8 +34,8 @@ export default function Solucion() {
             Nuestra solución
           </h2>
           <p className="mt-4 text-lg text-slate-400">
-            Un proceso claro para convertir tu tienda en una máquina de
-            ventas.
+            Un proceso claro para construir una marca que se vea, se sienta y
+            venda mejor.
           </p>
         </div>
 

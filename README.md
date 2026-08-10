@@ -1,6 +1,6 @@
 # La Agencia - Landing Page
 
-Landing page de una sola página para la agencia de servicios digitales "La Agencia", orientada a vender servicios de optimización de e-commerce.
+Landing page de una sola página para "La Agencia", agencia de marketing y diseño digital enfocada en branding, diseño web y redes sociales para negocios locales.
 
 ## Stack Tecnológico
 
@@ -44,6 +44,7 @@ npm run dev
 ### WhatsApp
 
 Edita los enlaces de WhatsApp en los componentes:
+- `components/Header.tsx`
 - `components/Hero.tsx`
 - `components/OfertaCerrada.tsx`
 - `components/CTAFinal.tsx`
@@ -63,17 +64,21 @@ El SEO básico está configurado en `app/layout.tsx`. Puedes personalizar:
 ```
 la-agencia-ags/
 ├── app/
-│   ├── layout.tsx          # Layout principal con metadata SEO
+│   ├── layout.tsx          # Layout principal con metadata SEO y fuente
 │   ├── page.tsx            # Página principal (landing)
+│   ├── icon.png            # Favicon (logo de la marca)
 │   └── globals.css         # Estilos globales Tailwind
 ├── components/
+│   ├── Header.tsx          # Encabezado con logo y CTA
 │   ├── Hero.tsx            # Sección Hero
+│   ├── Servicios.tsx       # Servicios ofrecidos
 │   ├── ProblemasComunes.tsx # Sección de problemas
 │   ├── Solucion.tsx        # Sección de solución
 │   ├── OfertaCerrada.tsx   # Oferta destacada
 │   ├── PruebaSocial.tsx    # Caso de éxito
 │   └── CTAFinal.tsx        # CTA final
-├── public/                 # Assets estáticos (si los hay)
+├── public/
+│   └── logo.png            # Logo de la marca
 └── README.md
 ```
 

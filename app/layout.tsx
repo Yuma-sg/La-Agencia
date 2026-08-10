@@ -13,21 +13,22 @@ const siteUrl = "https://laagencia.com.mx";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "La Agencia | Optimización de E-commerce que Vende Más",
+  title: "La Agencia | Marketing y Diseño para tu Negocio",
   description:
-    "Ayudamos a marcas a vender más en línea con estrategia, diseño y optimización de e-commerce. Auditoría gratuita y resultados medibles en semanas.",
+    "Branding, diseño web y redes sociales para negocios locales. Diagnóstico gratuito y una marca que se ve profesional, se recuerda y vende.",
   keywords: [
     "agencia de marketing digital",
-    "optimización de e-commerce",
-    "diseño web para tiendas en línea",
-    "CRO ecommerce",
+    "agencia de diseño",
+    "branding e identidad visual",
+    "diseño web para negocios",
+    "manejo de redes sociales",
     "agencia digital México",
   ],
   authors: [{ name: "La Agencia" }],
   openGraph: {
-    title: "La Agencia | Optimización de E-commerce que Vende Más",
+    title: "La Agencia | Marketing y Diseño para tu Negocio",
     description:
-      "Estrategia, diseño y optimización de e-commerce para marcas que quieren vender más en línea.",
+      "Branding, diseño web y redes sociales para negocios locales que quieren verse profesionales y vender más.",
     url: siteUrl,
     siteName: "La Agencia",
     locale: "es_MX",
@@ -35,9 +36,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "La Agencia | Optimización de E-commerce que Vende Más",
+    title: "La Agencia | Marketing y Diseño para tu Negocio",
     description:
-      "Estrategia, diseño y optimización de e-commerce para marcas que quieren vender más en línea.",
+      "Branding, diseño web y redes sociales para negocios locales que quieren verse profesionales y vender más.",
   },
   robots: {
     index: true,

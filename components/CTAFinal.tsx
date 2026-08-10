@@ -1,6 +1,6 @@
 const WHATSAPP_NUMBER = "5210000000000";
 const WHATSAPP_MESSAGE = encodeURIComponent(
-  "Hola, quiero agendar una llamada para mejorar mi tienda en línea."
+  "Hola, quiero agendar una llamada para mejorar la marca de mi negocio."
 );
 
 export default function CTAFinal() {
@@ -8,11 +8,11 @@ export default function CTAFinal() {
     <section className="bg-slate-950 py-20 sm:py-28">
       <div className="mx-auto max-w-3xl px-6 text-center">
         <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-          Dejemos de perder ventas hoy mismo
+          Construyamos tu marca hoy mismo
         </h2>
         <p className="mt-4 text-lg text-slate-400">
           Escríbenos por WhatsApp y en menos de 24 horas te contactamos para
-          agendar tu auditoría gratuita.
+          agendar tu diagnóstico gratuito.
         </p>
 
         <a

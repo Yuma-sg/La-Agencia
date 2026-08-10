@@ -1,7 +1,7 @@
 const metricas = [
-  { valor: "+68%", etiqueta: "en tasa de conversión" },
-  { valor: "-42%", etiqueta: "en abandono de carrito" },
-  { valor: "2.3x", etiqueta: "en ingresos por visitante" },
+  { valor: "+180%", etiqueta: "en seguidores en redes" },
+  { valor: "3x", etiqueta: "más clientes nuevos al mes" },
+  { valor: "30 días", etiqueta: "de marca a sitio web listo" },
 ];
 
 export default function PruebaSocial() {
@@ -13,8 +13,8 @@ export default function PruebaSocial() {
             Resultados reales
           </h2>
           <p className="mt-4 text-lg text-slate-400">
-            Así ayudamos a una marca de retail a transformar su tienda en
-            línea en 8 semanas.
+            Así ayudamos a un negocio local a construir su marca desde cero
+            en 8 semanas.
           </p>
         </div>
 
@@ -34,14 +34,13 @@ export default function PruebaSocial() {
 
         <blockquote className="mx-auto mt-14 max-w-3xl text-center">
           <p className="text-xl font-medium text-slate-200 sm:text-2xl">
-            &ldquo;En dos meses de trabajo con La Agencia duplicamos nuestras
-            ventas en línea sin aumentar el presupuesto de publicidad. El
-            equipo entendió exactamente dónde estábamos perdiendo
-            clientes.&rdquo;
+            &ldquo;Antes de La Agencia no teníamos ni logo. Hoy tenemos una
+            marca que la gente reconoce, un sitio web que se ve profesional
+            y redes que por fin traen clientes nuevos cada semana.&rdquo;
           </p>
           <footer className="mt-6 text-slate-400">
             <span className="font-semibold text-slate-200">Ana Martínez</span>{" "}
-            — Directora de E-commerce
+            — Dueña de negocio local
           </footer>
         </blockquote>
       </div>

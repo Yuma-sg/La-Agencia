@@ -1,23 +1,23 @@
 const problemas = [
   {
-    titulo: "Muchas visitas, pocas ventas",
+    titulo: "Tu marca no se ve profesional",
     descripcion:
-      "Tu tienda recibe tráfico pero la mayoría se va sin comprar. El problema no es la demanda, es la conversión.",
+      "Logo hecho a la carrera, colores que cambian según el día y nada de consistencia entre tu local, tus redes y tu papelería.",
   },
   {
-    titulo: "Checkout que espanta clientes",
+    titulo: "No tienes página web (o da pena)",
     descripcion:
-      "Pasos confusos, formularios largos y falta de confianza hacen que abandonen el carrito antes de pagar.",
+      "Tus clientes te buscan en línea antes de visitarte y no encuentran nada, o encuentran algo que no representa tu negocio.",
   },
   {
-    titulo: "Diseño que no genera confianza",
+    titulo: "Redes sociales abandonadas",
     descripcion:
-      "Una tienda que se ve poco profesional o lenta le cuesta ventas a tu marca todos los días.",
+      "Publicas cuando alcanzas, sin estrategia ni constancia, y tu negocio se va perdiendo entre la competencia.",
   },
   {
-    titulo: "Sin datos para decidir",
+    titulo: "No sabes qué está funcionando",
     descripcion:
-      "Tomas decisiones a ciegas porque no sabes en qué punto exacto se está perdiendo a los clientes.",
+      "Inviertes tiempo y dinero en marketing sin saber qué te trae clientes de verdad y qué es solo ruido.",
   },
 ];
 
@@ -30,8 +30,8 @@ export default function ProblemasComunes() {
             ¿Te suena familiar?
           </h2>
           <p className="mt-4 text-lg text-slate-400">
-            Estos son los problemas más comunes que frenan las ventas de
-            tiendas en línea como la tuya.
+            Estos son los problemas más comunes que frenan el crecimiento de
+            negocios como el tuyo.
           </p>
         </div>
 

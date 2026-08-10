@@ -1,6 +1,6 @@
 const WHATSAPP_NUMBER = "5210000000000";
 const WHATSAPP_MESSAGE = encodeURIComponent(
-  "Hola, quiero una auditoría gratuita para mi tienda en línea."
+  "Hola, quiero un diagnóstico gratuito para mi negocio."
 );
 
 export default function Hero() {
@@ -17,20 +17,20 @@ export default function Hero() {
 
       <div className="relative mx-auto flex max-w-5xl flex-col items-center px-6 text-center">
         <span className="inline-flex items-center gap-2 rounded-full bg-accent-400 px-4 py-1.5 text-sm font-semibold text-slate-950">
-          Especialistas en optimización de e-commerce
+          Marketing y diseño para negocios locales
         </span>
 
         <h1 className="mt-6 text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-          Tu tienda en línea puede vender{" "}
+          Dale a tu negocio la imagen{" "}
           <span className="bg-gradient-to-r from-brand-300 to-accent-400 bg-clip-text text-transparent">
-            mucho más
+            que se merece
           </span>
         </h1>
 
         <p className="mt-6 max-w-2xl text-lg text-slate-300 sm:text-xl">
-          Convertimos visitantes en clientes con estrategia, diseño y
-          optimización de e-commerce. Sin promesas vacías: solo cambios
-          medibles en tu tasa de conversión.
+          Branding, diseño web y redes sociales para que tu negocio se vea
+          profesional, se recuerde y venda. Todo en un solo lugar, sin
+          complicaciones.
         </p>
 
         <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row">
@@ -40,13 +40,13 @@ export default function Hero() {
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 rounded-full bg-brand-500 px-8 py-4 text-base font-semibold text-white shadow-lg shadow-brand-500/30 transition hover:bg-brand-400 hover:shadow-brand-400/40"
           >
-            Quiero mi auditoría gratuita
+            Quiero mi diagnóstico gratuito
           </a>
           <a
-            href="#solucion"
+            href="#servicios"
             className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-700 px-8 py-4 text-base font-semibold text-slate-200 transition hover:border-slate-500 hover:bg-slate-900"
           >
-            Ver cómo funciona
+            Ver servicios
           </a>
         </div>
 

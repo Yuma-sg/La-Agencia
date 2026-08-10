@@ -1,12 +1,12 @@
 const WHATSAPP_NUMBER = "5210000000000";
 const WHATSAPP_MESSAGE = encodeURIComponent(
-  "Hola, quiero aprovechar la oferta de auditoría + plan de optimización."
+  "Hola, quiero aprovechar el diagnóstico gratuito + plan de marca."
 );
 
 const incluye = [
-  "Auditoría completa de tu tienda en línea",
-  "Análisis de embudo de conversión y checkout",
-  "Plan de optimización con prioridades claras",
+  "Diagnóstico completo de tu marca y presencia digital",
+  "Revisión de tu web, redes sociales y competencia",
+  "Plan de branding y marketing con prioridades claras",
   "Sesión de revisión de resultados en vivo",
 ];
 
@@ -20,12 +20,12 @@ export default function OfertaCerrada() {
           </span>
 
           <h2 className="mt-6 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Auditoría gratuita + plan de optimización
+            Diagnóstico gratuito + plan de marca
           </h2>
 
           <p className="mt-4 text-lg text-slate-300">
-            Antes de invertir en nosotros, te mostramos exactamente qué está
-            frenando tus ventas y cómo lo resolveríamos. Sin costo, sin
+            Antes de invertir en nosotros, te mostramos exactamente qué le
+            falta a tu marca y cómo lo resolveríamos. Sin costo, sin
             compromiso.
           </p>
 
