@@ -22,7 +22,7 @@ export default function PruebaSocial() {
           {metricas.map((metrica) => (
             <div
               key={metrica.etiqueta}
-              className="card-hover rounded-2xl border border-slate-800 bg-slate-950/60 p-8 text-center hover:border-accent-400/40"
+              className="card-hover rounded-2xl border border-slate-800 bg-slate-950/60 p-8 text-center shadow-xl shadow-black/40 hover:border-accent-400/40"
             >
               <p className="text-4xl font-bold text-brand-400">
                 {metrica.valor}

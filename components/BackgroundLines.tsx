@@ -18,14 +18,7 @@ export default function BackgroundLines() {
               numOctaves="1"
               seed="11"
               result="noise"
-            >
-              <animate
-                attributeName="baseFrequency"
-                values="0.0016 0.0016;0.0024 0.002;0.001 0.0014;0.0016 0.0016"
-                dur="18s"
-                repeatCount="indefinite"
-              />
-            </feTurbulence>
+            />
             <feComponentTransfer in="noise" result="bands">
               <feFuncR type="discrete" tableValues="0 0.33 0.66 1" />
               <feFuncG type="discrete" tableValues="0 0.33 0.66 1" />
