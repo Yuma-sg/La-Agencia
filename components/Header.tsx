@@ -27,7 +27,7 @@ export default function Header() {
           href={`https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="link-highlight px-1 py-0.5 text-sm font-semibold"
+          className="inline-flex items-center justify-center bg-magenta-400 px-5 py-2 text-sm font-semibold text-slate-950 transition-colors hover:bg-accent-400"
         >
           Hablar por WhatsApp
         </a>
