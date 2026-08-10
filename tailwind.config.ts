@@ -49,15 +49,6 @@ const config: Config = {
       fontFamily: {
         sans: ["var(--font-poppins)", "system-ui", "sans-serif"],
       },
-      keyframes: {
-        drift: {
-          "0%, 100%": { transform: "translate(-50%, -50%) rotate(0deg)" },
-          "50%": { transform: "translate(-48%, -52%) rotate(1.5deg)" },
-        },
-      },
-      animation: {
-        drift: "drift 30s ease-in-out infinite",
-      },
     },
   },
   plugins: [],

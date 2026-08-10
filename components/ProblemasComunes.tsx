@@ -39,7 +39,7 @@ export default function ProblemasComunes() {
           {problemas.map((problema) => (
             <div
               key={problema.titulo}
-              className="rounded-2xl border border-slate-800 bg-slate-900/50 p-6 transition hover:border-slate-700"
+              className="card-hover rounded-2xl border border-slate-800 bg-slate-900/50 p-6 hover:border-magenta-400/40"
             >
               <h3 className="text-lg font-semibold text-white">
                 {problema.titulo}
