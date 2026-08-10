@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const WHATSAPP_NUMBER = "5210000000000";
+const WHATSAPP_NUMBER = "524491864565";
 const WHATSAPP_MESSAGE = encodeURIComponent(
   "Hola, quiero una auditoría gratuita para mi tienda en línea."
 );
