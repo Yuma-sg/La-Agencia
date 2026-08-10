@@ -37,7 +37,7 @@ export default function Servicios() {
           {servicios.map((servicio) => (
             <div
               key={servicio.titulo}
-              className="rounded-2xl border border-slate-800 bg-slate-900/50 p-8 transition hover:border-brand-400/40"
+              className="card-hover rounded-2xl border border-slate-800 bg-slate-900/50 p-8 hover:border-brand-400/40"
             >
               <span className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-500/15 text-2xl text-accent-400">
                 {servicio.icono}

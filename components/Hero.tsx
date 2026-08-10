@@ -29,13 +29,13 @@ export default function Hero() {
             href={`https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 rounded-full bg-brand-500 px-8 py-4 text-base font-semibold text-white shadow-lg shadow-brand-500/30 transition hover:bg-brand-400 hover:shadow-brand-400/40"
+            className="inline-flex translate-x-0 translate-y-0 items-center justify-center gap-2 rounded-full bg-brand-500 px-8 py-4 text-base font-semibold text-white shadow-[5px_5px_0_0_rgba(255,255,255,0.15)] transition hover:translate-x-[3px] hover:translate-y-[3px] hover:bg-brand-400 hover:shadow-[2px_2px_0_0_rgba(255,255,255,0.15)]"
           >
             Quiero mi diagnóstico gratuito
           </a>
           <a
             href="#servicios"
-            className="link-underline text-base font-semibold text-slate-200 transition hover:text-white"
+            className="link-highlight px-1 py-0.5 text-base font-semibold"
           >
             Ver servicios
           </a>
