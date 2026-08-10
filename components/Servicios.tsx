@@ -24,7 +24,7 @@ export default function Servicios() {
     <section id="servicios" className="py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          <h2 className="link-highlight text-3xl font-bold tracking-tight sm:text-4xl">
             Qué hacemos por tu negocio
           </h2>
           <p className="mt-4 text-lg text-slate-400">

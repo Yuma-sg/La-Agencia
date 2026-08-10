@@ -14,12 +14,12 @@ export default function OfertaCerrada() {
   return (
     <section className="py-20 sm:py-28">
       <div className="mx-auto max-w-4xl px-6">
-        <div className="relative border border-brand-400/40 bg-brand-950 p-8 text-center sm:p-14">
+        <div className="card-hover relative rounded-2xl border border-slate-800 bg-slate-900/50 p-8 text-center hover:border-brand-400/40 sm:p-14">
           <span className="inline-flex items-center bg-accent-400 px-4 py-1.5 text-sm font-semibold text-slate-950">
             Cupo limitado este mes
           </span>
 
-          <h2 className="mt-6 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          <h2 className="link-highlight mt-6 text-3xl font-bold tracking-tight sm:text-4xl">
             Diagnóstico gratuito + plan de marca
           </h2>
 
@@ -44,7 +44,7 @@ export default function OfertaCerrada() {
             href={`https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-10 inline-flex translate-x-0 translate-y-0 items-center justify-center gap-2 rounded-full bg-brand-500 px-8 py-4 text-base font-semibold text-white shadow-[5px_5px_0_0_rgba(255,255,255,0.15)] transition hover:translate-x-[3px] hover:translate-y-[3px] hover:bg-brand-400 hover:shadow-[2px_2px_0_0_rgba(255,255,255,0.15)]"
+            className="link-highlight mt-10 px-1 py-0.5 text-base font-semibold"
           >
             Solicitar mi lugar por WhatsApp
           </a>
