@@ -14,7 +14,7 @@ export default function OfertaCerrada() {
   return (
     <section className="py-20 sm:py-28">
       <div className="mx-auto max-w-4xl px-6">
-        <div className="card-hover relative rounded-2xl border border-slate-800 bg-slate-900/50 p-8 text-center hover:border-brand-400/40 sm:p-14">
+        <div className="card-hover relative rounded-2xl border border-slate-800 bg-slate-900/50 p-8 text-center shadow-2xl shadow-black/50 hover:border-brand-400/40 sm:p-14">
           <span className="inline-flex items-center bg-accent-400 px-4 py-1.5 text-sm font-semibold text-slate-950">
             Cupo limitado este mes
           </span>
