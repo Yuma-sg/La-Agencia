@@ -1,48 +1,20 @@
+const noiseSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="noise"/><feComponentTransfer><feFuncR type="linear" slope="2.2" intercept="-0.6"/><feFuncG type="linear" slope="2.2" intercept="-0.6"/><feFuncB type="linear" slope="2.2" intercept="-0.6"/></feComponentTransfer></filter><rect width="100%" height="100%" filter="url(#n)"/></svg>`;
+const noiseDataUri = `url("data:image/svg+xml,${encodeURIComponent(noiseSvg)}")`;
+
 export default function BackgroundLines() {
   return (
     <div
-      className="pointer-events-none fixed inset-0 -z-10 overflow-hidden bg-black"
+      className="pointer-events-none fixed inset-0 -z-10 bg-black"
       aria-hidden="true"
     >
-      <svg
-        className="absolute inset-0 h-full w-full opacity-[0.11]"
-        viewBox="0 0 1000 1000"
-        preserveAspectRatio="xMidYMid slice"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <defs>
-          <filter id="topo-contours" x="-20%" y="-20%" width="140%" height="140%">
-            <feTurbulence
-              type="fractalNoise"
-              baseFrequency="0.0016 0.0016"
-              numOctaves="1"
-              seed="11"
-              result="noise"
-            />
-            <feComponentTransfer in="noise" result="bands">
-              <feFuncR type="discrete" tableValues="0 0.33 0.66 1" />
-              <feFuncG type="discrete" tableValues="0 0.33 0.66 1" />
-              <feFuncB type="discrete" tableValues="0 0.33 0.66 1" />
-            </feComponentTransfer>
-            <feConvolveMatrix
-              in="bands"
-              order="3"
-              kernelMatrix="-1 -1 -1 -1 8 -1 -1 -1 -1"
-              result="edges"
-            />
-            <feGaussianBlur in="edges" stdDeviation="0.5" result="softedges" />
-            <feColorMatrix
-              in="softedges"
-              type="matrix"
-              values="0 0 0 0 1
-                      0 0 0 0 1
-                      0 0 0 0 1
-                      1.4 0 0 0 0"
-            />
-          </filter>
-        </defs>
-        <rect width="100%" height="100%" filter="url(#topo-contours)" />
-      </svg>
+      <div
+        className="absolute inset-0 opacity-[0.15]"
+        style={{
+          backgroundImage: noiseDataUri,
+          backgroundRepeat: "repeat",
+          backgroundSize: "180px 180px",
+        }}
+      />
     </div>
   );
 }
