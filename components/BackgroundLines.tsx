@@ -6,6 +6,7 @@ export default function BackgroundLines() {
     >
       <svg
         className="absolute inset-0 h-full w-full opacity-[0.11]"
+        viewBox="0 0 1000 1000"
         preserveAspectRatio="xMidYMid slice"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -13,15 +14,15 @@ export default function BackgroundLines() {
           <filter id="topo-contours" x="-20%" y="-20%" width="140%" height="140%">
             <feTurbulence
               type="fractalNoise"
-              baseFrequency="0.0011 0.0011"
+              baseFrequency="0.0016 0.0016"
               numOctaves="1"
               seed="11"
               result="noise"
             >
               <animate
                 attributeName="baseFrequency"
-                values="0.0011 0.0011;0.00135 0.00125;0.00085 0.00095;0.0011 0.0011"
-                dur="45s"
+                values="0.0016 0.0016;0.0024 0.002;0.001 0.0014;0.0016 0.0016"
+                dur="18s"
                 repeatCount="indefinite"
               />
             </feTurbulence>
