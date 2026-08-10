@@ -33,13 +33,30 @@ const config: Config = {
           800: "#565f00",
           900: "#2d3200",
         },
+        magenta: {
+          50: "#ffe4f3",
+          100: "#ffc0e4",
+          200: "#ff85cc",
+          300: "#ff5fb8",
+          400: "#ff2e9c",
+          500: "#f0057f",
+          600: "#c40468",
+          700: "#970351",
+          800: "#6b023a",
+          900: "#3f0122",
+        },
       },
       fontFamily: {
         sans: ["var(--font-poppins)", "system-ui", "sans-serif"],
       },
-      backgroundImage: {
-        "grid-pattern":
-          "linear-gradient(to right, rgb(255 255 255 / 0.06) 1px, transparent 1px), linear-gradient(to bottom, rgb(255 255 255 / 0.06) 1px, transparent 1px)",
+      keyframes: {
+        drift: {
+          "0%, 100%": { transform: "translate(-50%, -50%) rotate(0deg)" },
+          "50%": { transform: "translate(-48%, -52%) rotate(1.5deg)" },
+        },
+      },
+      animation: {
+        drift: "drift 30s ease-in-out infinite",
       },
     },
   },

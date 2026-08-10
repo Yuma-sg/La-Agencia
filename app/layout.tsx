@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import BackgroundLines from "@/components/BackgroundLines";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -53,7 +54,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" className={`scroll-smooth ${poppins.variable}`}>
-      <body className="bg-slate-950 font-sans text-slate-100 antialiased">
+      <body className="bg-black font-sans text-slate-100 antialiased">
+        <BackgroundLines />
         {children}
       </body>
     </html>
