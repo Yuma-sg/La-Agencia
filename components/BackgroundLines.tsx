@@ -5,7 +5,7 @@ export default function BackgroundLines() {
       aria-hidden="true"
     >
       <svg
-        className="absolute inset-0 h-full w-full opacity-[0.07]"
+        className="absolute inset-0 h-full w-full opacity-[0.11]"
         preserveAspectRatio="xMidYMid slice"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -20,15 +20,15 @@ export default function BackgroundLines() {
             >
               <animate
                 attributeName="baseFrequency"
-                values="0.0011 0.0011;0.0012 0.00115;0.00105 0.00115;0.0011 0.0011"
-                dur="180s"
+                values="0.0011 0.0011;0.00135 0.00125;0.00085 0.00095;0.0011 0.0011"
+                dur="45s"
                 repeatCount="indefinite"
               />
             </feTurbulence>
             <feComponentTransfer in="noise" result="bands">
-              <feFuncR type="discrete" tableValues="0 0.25 0.5 0.75 1" />
-              <feFuncG type="discrete" tableValues="0 0.25 0.5 0.75 1" />
-              <feFuncB type="discrete" tableValues="0 0.25 0.5 0.75 1" />
+              <feFuncR type="discrete" tableValues="0 0.33 0.66 1" />
+              <feFuncG type="discrete" tableValues="0 0.33 0.66 1" />
+              <feFuncB type="discrete" tableValues="0 0.33 0.66 1" />
             </feComponentTransfer>
             <feConvolveMatrix
               in="bands"
@@ -36,13 +36,14 @@ export default function BackgroundLines() {
               kernelMatrix="-1 -1 -1 -1 8 -1 -1 -1 -1"
               result="edges"
             />
+            <feGaussianBlur in="edges" stdDeviation="0.5" result="softedges" />
             <feColorMatrix
-              in="edges"
+              in="softedges"
               type="matrix"
               values="0 0 0 0 1
                       0 0 0 0 1
                       0 0 0 0 1
-                      1 0 0 0 0"
+                      1.4 0 0 0 0"
             />
           </filter>
         </defs>
