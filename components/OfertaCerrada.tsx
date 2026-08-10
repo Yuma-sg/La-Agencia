@@ -44,7 +44,7 @@ export default function OfertaCerrada() {
             href={`https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="link-highlight mt-10 px-1 py-0.5 text-base font-semibold"
+            className="mt-10 inline-flex items-center justify-center bg-accent-400 px-8 py-4 text-base font-semibold text-slate-950 transition-colors hover:bg-magenta-400"
           >
             Solicitar mi lugar por WhatsApp
           </a>

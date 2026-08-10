@@ -7,15 +7,13 @@ export default function Hero() {
   return (
     <section className="relative pb-20 pt-16 sm:pb-28 sm:pt-24">
       <div className="relative mx-auto flex max-w-5xl flex-col items-center px-6 text-center">
-        <span className="inline-flex items-center gap-2 bg-accent-400 px-4 py-1.5 text-sm font-semibold text-slate-950">
+        <span className="inline-flex items-center gap-2 bg-magenta-400 px-4 py-1.5 text-sm font-semibold text-slate-950">
           Marketing y diseño para negocios locales
         </span>
 
         <h1 className="mt-6 text-4xl font-bold uppercase leading-[1.05] tracking-tight text-white sm:text-5xl md:text-6xl">
           Dale a tu negocio la imagen{" "}
-          <span className="box-decoration-clone bg-magenta-400 px-2 text-slate-950">
-            que se merece
-          </span>
+          <span className="link-highlight">que se merece</span>
         </h1>
 
         <p className="mt-6 max-w-2xl text-lg text-slate-300 sm:text-xl">
@@ -29,13 +27,13 @@ export default function Hero() {
             href={`https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="link-highlight px-1 py-0.5 text-base font-semibold"
+            className="inline-flex items-center justify-center bg-accent-400 px-8 py-4 text-base font-semibold text-slate-950 transition-colors hover:bg-magenta-400"
           >
             Quiero mi diagnóstico gratuito
           </a>
           <a
             href="#servicios"
-            className="link-highlight px-1 py-0.5 text-base font-semibold"
+            className="inline-flex items-center justify-center bg-accent-400 px-6 py-4 text-base font-semibold text-slate-950 transition-colors hover:bg-magenta-400"
           >
             Ver servicios
           </a>
