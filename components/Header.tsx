@@ -2,12 +2,12 @@ import Image from "next/image";
 
 const WHATSAPP_NUMBER = "524491864565";
 const WHATSAPP_MESSAGE = encodeURIComponent(
-  "Hola, quiero una auditoría gratuita para mi tienda en línea."
+  "Hola, quiero un diagnóstico gratuito para mi negocio."
 );
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-white/5 bg-slate-950/80 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-white/5 bg-black/70 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
         <a href="#" className="flex items-center gap-3">
           <Image
