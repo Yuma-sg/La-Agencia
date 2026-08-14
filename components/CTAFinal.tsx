@@ -1,7 +1,10 @@
+import IconInstagram from "@/components/IconInstagram";
+
 const WHATSAPP_NUMBER = "524491864565";
 const WHATSAPP_MESSAGE = encodeURIComponent(
   "Hola, quiero agendar una llamada para mejorar la marca de mi negocio."
 );
+const INSTAGRAM_URL = "https://www.instagram.com/laagenciaags/";
 
 export default function CTAFinal() {
   return (
@@ -24,9 +27,20 @@ export default function CTAFinal() {
           Hablar con La Agencia por WhatsApp
         </a>
 
-        <footer className="mt-16 border-t border-slate-800 pt-8 text-sm text-slate-500">
-          © {new Date().getFullYear()} La Agencia. Todos los derechos
-          reservados.
+        <footer className="mt-16 flex flex-col items-center gap-4 border-t border-slate-800 pt-8 text-sm text-slate-500">
+          <a
+            href={INSTAGRAM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-slate-400 transition-colors hover:text-magenta-400"
+          >
+            <IconInstagram className="h-5 w-5" />
+            @laagenciaags
+          </a>
+          <p>
+            © {new Date().getFullYear()} La Agencia. Todos los derechos
+            reservados.
+          </p>
         </footer>
       </div>
     </section>
