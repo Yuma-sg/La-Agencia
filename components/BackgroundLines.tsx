@@ -4,11 +4,11 @@ const noiseDataUri = `url("data:image/svg+xml,${encodeURIComponent(noiseSvg)}")`
 export default function BackgroundLines() {
   return (
     <div
-      className="pointer-events-none fixed inset-0 -z-10 bg-black"
+      className="pointer-events-none fixed inset-0 -z-10 bg-background"
       aria-hidden="true"
     >
       <div
-        className="absolute inset-0 opacity-[0.15]"
+        className="absolute inset-0 opacity-[0.025] dark:opacity-[0.15]"
         style={{
           backgroundImage: noiseDataUri,
           backgroundRepeat: "repeat",
