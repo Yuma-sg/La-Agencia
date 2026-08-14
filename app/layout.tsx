@@ -1,7 +1,19 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import BackgroundLines from "@/components/BackgroundLines";
+import { ThemeProvider } from "@/components/providers/ThemeProvider";
+import { LanguageProvider } from "@/components/providers/LanguageProvider";
 import "./globals.css";
+
+const themeInitScript = `
+(function () {
+  try {
+    var stored = localStorage.getItem('theme');
+    var theme = stored === 'light' ? 'light' : 'dark';
+    document.documentElement.classList.toggle('dark', theme === 'dark');
+  } catch (e) {}
+})();
+`;
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -53,10 +65,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es" className={`scroll-smooth ${poppins.variable}`}>
-      <body className="bg-black font-sans text-slate-100 antialiased">
-        <BackgroundLines />
-        {children}
+    <html
+      lang="es"
+      suppressHydrationWarning
+      className={`dark scroll-smooth ${poppins.variable}`}
+    >
+      <body className="bg-background font-sans text-foreground antialiased">
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+        <ThemeProvider>
+          <LanguageProvider>
+            <BackgroundLines />
+            {children}
+          </LanguageProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

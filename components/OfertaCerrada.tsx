@@ -1,37 +1,33 @@
-const WHATSAPP_NUMBER = "524491864565";
-const WHATSAPP_MESSAGE = encodeURIComponent(
-  "Hola, quiero aprovechar el diagnóstico gratuito + plan de marca."
-);
+"use client";
 
-const incluye = [
-  "Diagnóstico completo de tu marca y presencia digital",
-  "Revisión de tu web, redes sociales y competencia",
-  "Plan de branding y marketing con prioridades claras",
-  "Sesión de revisión de resultados en vivo",
-];
+import { useLanguage } from "@/components/providers/LanguageProvider";
+
+const WHATSAPP_NUMBER = "524491864565";
 
 export default function OfertaCerrada() {
+  const { t } = useLanguage();
+  const whatsappMessage = encodeURIComponent(t.oferta.whatsappMessage);
+
   return (
     <section className="py-20 sm:py-28">
       <div className="mx-auto max-w-4xl px-6">
-        <div className="card-hover relative rounded-2xl border border-slate-800 bg-slate-900/50 p-8 text-center shadow-2xl shadow-black/50 hover:border-brand-400/40 sm:p-14">
+        <div className="card-hover relative rounded-2xl border border-foreground/10 bg-surface/50 p-8 text-center shadow-2xl shadow-black/50 hover:border-brand-400/40 sm:p-14">
           <span className="inline-flex items-center bg-accent-400 px-4 py-1.5 text-sm font-semibold text-slate-950">
-            Cupo limitado este mes
+            {t.oferta.badge}
           </span>
 
           <h2 className="link-highlight mt-6 text-3xl font-bold tracking-tight sm:text-4xl">
-            Diagnóstico gratuito + plan de marca
+            {t.oferta.heading}
           </h2>
 
-          <p className="mt-4 text-lg text-slate-300">
-            Antes de invertir en nosotros, te mostramos exactamente qué le
-            falta a tu marca y cómo lo resolveríamos. Sin costo, sin
-            compromiso.
-          </p>
+          <p className="mt-4 text-lg text-muted">{t.oferta.paragraph}</p>
 
           <ul className="mx-auto mt-8 grid max-w-md gap-3 text-left">
-            {incluye.map((item) => (
-              <li key={item} className="flex items-start gap-3 text-slate-200">
+            {t.oferta.items.map((item) => (
+              <li
+                key={item}
+                className="flex items-start gap-3 text-foreground"
+              >
                 <span className="mt-1 flex h-5 w-5 flex-none items-center justify-center rounded-full bg-accent-400/20 text-accent-400">
                   ✓
                 </span>
@@ -41,12 +37,12 @@ export default function OfertaCerrada() {
           </ul>
 
           <a
-            href={`https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`}
+            href={`https://wa.me/${WHATSAPP_NUMBER}?text=${whatsappMessage}`}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-10 inline-flex items-center justify-center bg-accent-400 px-8 py-4 text-base font-semibold text-slate-950 transition-colors hover:bg-magenta-400"
           >
-            Solicitar mi lugar por WhatsApp
+            {t.oferta.cta}
           </a>
         </div>
       </div>

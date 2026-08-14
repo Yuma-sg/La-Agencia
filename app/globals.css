@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --background: 0 0% 100%;
+  --foreground: 240 10% 6%;
+  --surface: 240 20% 96%;
+  --muted: 240 6% 38%;
+}
+
+.dark {
+  --background: 0 0% 0%;
+  --foreground: 0 0% 100%;
+  --surface: 222 47% 11%;
+  --muted: 215 20% 65%;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -14,7 +28,7 @@ body {
   --highlight-color: #ff2e9c;
   position: relative;
   display: inline-block;
-  color: #fff;
+  color: hsl(var(--foreground));
   text-decoration: none;
   transition: color 0.2s ease 0.05s;
 }
